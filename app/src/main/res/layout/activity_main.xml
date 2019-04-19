@@ -10,19 +10,24 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:orientation="vertical">
+        android:orientation="vertical"
+        android:padding="25dp">
 
         <Button
             android:id="@+id/init"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:clickable="false"
             android:onClick="btInit"
-            android:text="Initialize" />
+            android:text="Bluetooth" />
 
         <Button
             android:id="@+id/scan"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:clickable="false"
             android:onClick="btScan"
             android:text="Scan" />
 
@@ -30,19 +35,23 @@
             android:id="@+id/discoverable"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:clickable="false"
             android:onClick="btDeviceDiscoverable"
             android:text="Discoverable" />
 
         <ScrollView
             android:layout_width="match_parent"
-            android:layout_height="match_parent">
+            android:layout_height="match_parent"
+            android:layout_margin="10dp">
 
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:orientation="vertical" >
+                android:orientation="vertical">
 
                 <android.support.v7.widget.RecyclerView
+                    android:id="@+id/recyclerView"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent" />
             </LinearLayout>
