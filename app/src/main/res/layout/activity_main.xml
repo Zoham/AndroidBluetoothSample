@@ -14,17 +14,24 @@
 
         <Button
             android:id="@+id/init"
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:onClick="btInit"
             android:text="Initialize" />
 
         <Button
             android:id="@+id/scan"
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:onClick="btScan"
             android:text="Scan" />
+
+        <Button
+            android:id="@+id/discoverable"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="btDeviceDiscoverable"
+            android:text="Discoverable" />
 
         <ScrollView
             android:layout_width="match_parent"
